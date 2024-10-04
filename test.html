@@ -1,12 +1,2807 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    test
-    <h4>This is also for testing new visual studio code in windows 11</h4>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        .under-form-container {
+            margin-left: -50px;
+        }
+
+        .bestsystem {
+            padding-left: 165px;
+            padding-right: 165px;
+            padding-top: 70px;
+
+        }
+
+        .bestsystem p {
+            font-size: 1.1rem;
+        }
+
+        .bestsystem h2 {
+            color: #E40F1E;
+            margin-bottom: 16px;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .listall {
+            list-style-type: circle;
+        }
+
+        .hero {
+            width: 1550px;
+            margin-left: -157px;
+        }
+
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://johnowensservices.com/wp-content/uploads/Boiler-Header-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            color: black;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            flex: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.616);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            height: 400px !important;
+            margin-top: 75px;
+            flex-direction: column;
+        }
+
+        .form-container iframe {
+            width: 100%;
+            height: 430px;
+            border: none;
+        }
+
+        .text-container {
+            flex: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            padding: 20px;
+            margin-left: 20px;
+            margin-top: 400px;
+            background: rgba(255, 255, 255, 0.649);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            height: 160px;
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        .text-container h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            color: #253F58;
+        }
+
+        .text-container p {
+            font-size: 1.2rem;
+            margin: 0;
+            color: #333;
+        }
+
+        @media (max-width: 1024px) {
+            .form-container {
+                flex: 40%;
+            }
+
+            .text-container {
+                flex: 60%;
+                margin-left: 10px;
+                margin-top: 100px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                padding: 0;
+
+            }
+
+
+
+            .form-container,
+            .text-container {
+                flex: 100%;
+                margin: 10px 0;
+            }
+
+            .text-container {
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text-container h1 {
+                font-size: 2rem;
+            }
+
+            .under-form-container {
+                margin-left: 0px;
+            }
+
+            .form-container {
+                height: 450px;
+            }
+
+            .text-container p {
+                font-size: 1rem;
+            }
+        }
+
+        .services-section {
+            background-color: whitesmoke;
+            padding: 40px 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background-color: #E40F1E;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(25% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 360px;
+        }
+
+        .service-card1 {
+            background-color: #2f00ff;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(25% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 300px;
+        }
+
+        .service-card1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            background-color: #E40F1E;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            background-color: #253F58;
+        }
+
+        .service-card img {
+            max-width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .service-card1 img {
+            max-width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin: 0 0 10px 0;
+            color: #fff !important;
+
+        }
+
+        .service-card1 h3 {
+            font-size: 1.5rem;
+            margin: 0 0 10px 0;
+
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            margin: 0;
+            color: #fff !important;
+        }
+
+        .service-card1 p {
+            font-size: 1rem;
+            margin: 0;
+
+        }
+
+        @media (max-width: 768px) {
+
+            .service-card,
+            .service-card1 {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .service-card,
+            .service-card1 {
+                flex: 1 1 100%;
+            }
+        }
+
+        .text-section {
+            background-color: #fff;
+            padding: 40px 150px;
+            text-align: left;
+        }
+
+        .text-section h2 {
+            color: #E40F1E;
+            font-size: 2rem;
+        }
+
+        .text-section p {
+            font-size: 1.1rem;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .text-section a {
+            color: #E40F1E;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .text-section a:hover {
+            text-decoration: underline;
+        }
+
+        .text-section a::before {
+            content: '⮞';
+            margin-right: 8px;
+        }
+
+        @media (max-width: 480px) {
+            .text-section {
+                padding: 40px 20px;
+            }
+
+            .text-section h2 {
+                line-height: 35px;
+            }
+        }
+
+        .testimonial-section {
+            width: 1550px;
+            margin-left: -157px;
+        }
+
+        .testimonial-section {
+            background-color: #E40F1E;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .testimonial-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff !important;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+            height: auto;
+        }
+
+        .testimonial-card:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .testimonial-card img {
+            max-width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card p {
+            font-size: 1rem;
+            margin: 0 0 10px 0;
+        }
+
+        .testimonial-card span {
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-card {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .testimonial-card {
+                flex: 1 1 100%;
+            }
+        }
+
+        .more-reviews {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #E40F1E;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .more-reviews:hover {
+            background-color: #023092;
+            color: #fff;
+        }
+
+
+        .expert-plumbers-section {
+            padding: 40px 20px;
+            background-color: #253f58;
+            width: 1550px;
+            margin-left: -157px;
+        }
+
+        .expert-plumbers-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .expert-plumbers-content,
+        .video-container {
+            flex: 1 1 calc(50% - 20px);
+            margin: 50px 20px 0px 0px;
+            box-sizing: border-box;
+        }
+
+        .expert-plumbers-content h3 {
+            color: #fff;
+        }
+
+        .expert-plumbers-section h2 {
+            color: #E40F1E;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .expert-plumbers-section p {
+            font-size: 1.1rem;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        .expert-plumbers-section ul {
+            padding-left: 20px;
+            list-style-type: disc;
+            margin: 20px 0;
+        }
+
+        .expert-plumbers-section li {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .expert-plumbers-section a {
+            color: #E40F1E;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .expert-plumbers-section a:hover {
+            text-decoration: underline;
+        }
+
+        .video-container {
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .video-container iframe {
+            width: 80%;
+            height: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .expert-plumbers-container {
+                flex-direction: column;
+            }
+
+            .video-container {
+                align-items: center;
+                margin-top: 0;
+            }
+
+            .video-container iframe {
+                width: 100%;
+                height: 300px;
+            }
+
+            .expert-plumbers-content,
+            .video-container {
+                flex: 1 1 100%;
+            }
+        }
+
+        .reasons-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .reasons-image {
+            flex: 1 1 calc(40% - 20px);
+            margin: 10px;
+        }
+
+        .reasons-content {
+            flex: 1 1 calc(60% - 20px);
+            margin: 10px;
+        }
+
+        .reasons-content p {
+            font-size: 17.6px;
+            color: #333333;
+        }
+
+
+        .reasons-content h2 {
+            color: #E40F1E;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .reasons-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .reasons-content li {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .reasons-content li img {
+            margin-right: 10px;
+            width: 15px;
+        }
+
+        .check-availability {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #E40F1E;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .check-availability:hover {
+            background-color: #253F58;
+            color: #fff !important;
+        }
+
+        @media (max-width: 768px) {
+            .reasons-section {
+                flex-direction: column;
+            }
+
+            .reasons-image,
+            .reasons-content {
+                flex: 1 1 100%;
+                text-align: left;
+            }
+
+            .reasons-content ul {
+                padding: 0;
+            }
+
+            .reasons-content li {
+                justify-content: left;
+            }
+        }
+
+        .reliable-plumbing-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reliable-plumbing-image {
+            flex: 1 1 calc(40% - 20px);
+            margin: 10px 0px;
+        }
+
+        .reliable-plumbing-content {
+            flex: 1 1 calc(60% - 20px);
+            margin: 10px;
+        }
+
+        .reliable-plumbing-content h2 {
+            color: #E40F1E;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .reliable-plumbing-content p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .reliable-plumbing-content a {
+            color: #E40F1E;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .reliable-plumbing-content a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .reliable-plumbing-section {
+                flex-direction: column;
+            }
+
+            .reliable-plumbing-image,
+            .reliable-plumbing-content {
+                flex: 1 1 100%;
+                text-align: left;
+                width: 100%;
+            }
+        }
+
+        .results-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .results-container {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            gap: 10px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .result-card {
+            flex: 0 0 calc(33.3333% - 6.66px);
+            max-width: calc(33.3333% - 6.66px);
+            box-sizing: border-box;
+        }
+
+        .result-card img {
+            width: 100%;
+            height: 250px;
+            /* Set a fixed height for all images */
+            object-fit: cover;
+            /* Ensures the image covers the area while maintaining aspect ratio */
+            border-radius: 10px;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .nav-arrow.prev {
+            left: 0;
+        }
+
+        .nav-arrow.next {
+            right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .results-container {
+                flex-direction: row;
+            }
+
+            .results-section {
+                flex-direction: column;
+                padding-bottom: 60px;
+                /* Add space for the buttons */
+            }
+
+            .nav-arrow {
+                position: static;
+                /* Change position to static to place it below the images */
+                margin: 10px 5px;
+                margin-top: 35px;
+                /* Add margin for spacing */
+                display: inline-block;
+                /* Align buttons side-by-side */
+            }
+
+
+        }
+
+
+
+        .schedule-repair-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .schedule-repair-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .schedule-repair-content {
+            flex: 1 1 calc(60% - 20px);
+            margin: 5px;
+            text-align: left;
+        }
+
+        .schedule-repair-content h2 {
+            color: #E40F1E;
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .schedule-repair-content h3 {
+            color: #E40F1E;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .schedule-repair-content img {
+            max-width: 100px;
+            margin: 10px 0;
+        }
+
+        .schedule-repair-content p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .check-availability {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #E40F1E;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .check-availability:hover {
+            background-color: #253F58;
+        }
+
+        .schedule-repair-image {
+            flex: 1 1 calc(40% - 20px);
+            margin: 10px;
+        }
+
+        .schedule-repair-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .schedule-repair-container {
+                flex-direction: column;
+            }
+
+            .schedule-repair-content,
+            .schedule-repair-image {
+                flex: 1 1 100%;
+                text-align: left;
+            }
+        }
+
+        .areas-serve-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .areas-serve-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .areas-serve-content {
+            flex: 1 1 calc(50% - 20px);
+            margin: 10px;
+        }
+
+        .areas-serve-content h2 {
+            color: #E40F1E;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .areas-serve-content h3 {
+            color: #E40F1E;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .areas-serve-content p {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .areas-serve-map {
+            flex: 1 1 calc(50% - 20px);
+            margin: 100px 10px 10px 10px;
+        }
+
+        .areas-serve-map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .areas-serve-container {
+                flex-direction: column;
+            }
+
+            .areas-serve-content,
+            .areas-serve-map {
+                flex: 1 1 100%;
+            }
+        }
+
+        .custom-services-section {
+            padding: 40px 20px;
+            background-color: #23395d;
+            /* Matching the dark blue color from the image */
+            color: white;
+            text-align: center;
+            border: 5px solid red;
+            /* Matching the red border from the image */
+            border-radius: 10px;
+            /* Adding some border radius for smoother corners */
+            max-width: 800px;
+            /* Set the width to 800px */
+            margin: 40px auto;
+            /* Center the section horizontally */
+        }
+
+        .custom-services-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            position: relative;
+            color: #fff !important;
+        }
+
+        .custom-services-section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background-color: red;
+            margin: 10px auto;
+        }
+
+        .custom-services-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .custom-services-column {
+            flex: 1;
+            margin: 0 10px;
+            text-align: left;
+        }
+
+        .custom-service-item {
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        .custom-service-item a {
+            display: block;
+            padding: 10px 0;
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .custom-service-item a span {
+            float: right;
+            transition: transform 0.3s;
+        }
+
+        .custom-service-item a:hover {
+            color: #ffcc00;
+        }
+
+        .custom-service-item a:hover span {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .custom-services-container {
+                flex-direction: column;
+            }
+
+            .custom-services-column {
+                margin: 10px 0;
+            }
+        }
+
+        .services-details-section {
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            margin-top: -10px;
+        }
+
+        .services-details-section h2 {
+            font-size: 45px;
+            text-align: center;
+
+            color: #e40f1e;
+            font-weight: bold;
+
+        }
+
+        .services-details-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .service-detail-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1 1 calc(50% - 40px);
+            box-sizing: border-box;
+        }
+
+        .service-detail-card h2 {
+            color: #E40F1E;
+            font-size: 1.5rem;
+            padding-top: 20px;
+
+        }
+
+        .service-detail-card p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 50px;
+
+        }
+
+        .service-link {
+            color: #E40F1E;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .service-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .service-detail-card {
+                flex: 1 1 100%;
+                width: 80%;
+            }
+
+            .service-detail-card p {
+                width: 290px;
+
+            }
+        }
+
+
+        .partner-section {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .partner-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .partner-logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .partner-section h2 {
+            color: #E40F1E;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .partner-section p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .partner-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .partner-button {
+            background-color: #E40F1E;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .partner-button:hover {
+            background-color: #253F58;
+            color: #fff !important;
+        }
+
+        .app-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .app-button {
+            background-color: #E40F1E;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .app-button:hover {
+            background-color: #253F58;
+            color: #fff !important;
+        }
+
+        @media (min-width: 768px) {
+            .partner-buttons {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .faq-section {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+        }
+
+        .faq-section1 {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+
+        }
+
+        .faq-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .faq-section h2 {
+            color: #E40F1E;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+        }
+
+        .faq-column {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: rgba(245, 245, 245, 0);
+            border-radius: 10px;
+
+        }
+
+        .faq-column h3 {
+            color: #E40F1E;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-column p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .faq-column ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .faq-column ul li {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .faq-column {
+                flex: 1 1 100%;
+            }
+        }
+
+        .info-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .info-card {
+            background-color: #253F58;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 200px;
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(20% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            background-color: #E40F1E;
+        }
+
+        .info-card img {
+            max-width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .info-card h3 {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            color: #fff !important;
+        }
+
+        .info-card p {
+            font-size: 1rem;
+            margin: 0;
+            color: #fff !important;
+        }
+
+        @media (max-width: 768px) {
+            .info-card {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+
+
+
+        @media (max-width: 480px) {
+            .info-card {
+                flex: 1 1 100%;
+            }
+
+            .hero,
+            .testimonial-section,
+            .expert-plumbers-section {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            .text-container {
+                margin-top: 0px !important;
+
+            }
+
+        }
+
+        @media (max-width: 1028px) {
+
+            .testimonial-section,
+            .expert-plumbers-section {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            .text-container {
+                margin-top: 330px;
+                height: 160px;
+            }
+
+            .text-container h1 {
+                font-size: 32px;
+            }
+
+            .hero {
+                height: 80%;
+                width: 100%;
+                margin-left: 0px;
+                padding: 30px;
+            }
+        }
+
+        .phone-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #E40F1E;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .phone-link:hover {
+            background-color: #253F58;
+            color: white;
+        }
+
+        .unique-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px;
+        }
+
+        .unique-column {
+            flex: 1 1 23%;
+            margin: 1px;
+            box-sizing: border-box;
+        }
+
+        .unique-column ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .unique-column h3 {
+            text-align: left;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .unique-column {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .unique-column {
+                flex: 1 1 100%;
+            }
+        }
+
+        .under-form-container {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .under-form-container img {
+            width: 320px;
+            margin-top: -100px;
+            margin-bottom: -50px;
+
+        }
+
+        .serves-inside {
+            text-align: center !important;
+            font-size: 1rem;
+            padding: 10px 50px;
+
+        }
+
+        @media (max-width: 480px) {
+            .serves-inside {
+                padding: 0 !important;
+                text-align: left !important;
+            }
+
+            .services-details-section h2 {
+                font-size: 24px !important;
+            }
+
+            .bestsystem {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+
+        .brand-section-services-details {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .brand-section-serves-inside {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .brand-section-details-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .brand-section-logos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .brand-section-logo {
+
+            /* max-width: 100px; */
+            height: 100px;
+            width: 214px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-section-logo:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .brand-section-logo {
+                max-width: 140px;
+        height: 65px;
+            }
+        }
+
+        
+
+
+        .new-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .new-section-heading {
+            font-size: 2rem;
+            color: #E40F1E;
+            margin-bottom: 20px;
+        }
+
+        .new-section-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        .new-section-image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .new-section-image {
+
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .new-section-heading {
+                font-size: 1.8rem;
+            }
+
+            .new-section-text {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+
+            .new-section-image {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .new-section-heading {
+                font-size: 1.6rem;
+            }
+
+            .new-section-text {
+                font-size: 0.9rem;
+                padding: 0 5px;
+            }
+
+            .new-section-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="under-form-container">
+                <div class="form-container">
+                    <iframe src="https://johnowensservices.com/wp-admin/admin-ajax.php?action=frm_forms_preview&form=rinnai-page
+                        " frameborder="0"></iframe>
+                    <div>
+                        <img src="https://johnowensservices.com/wp-content/uploads/SINCE-1968-1-scaled.webp" alt="img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-container">
+                <div class="text-content">
+                    <h1>Authorized Rinnai Dealer and Installer</h1>
+                    <p>Preferred Rinnai Service Provider for Marin & Sonoma Counties Since 1999
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-section">
+        <h2 style="text-align: center;">Our Radiant Heat Boilers Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <a href="#" style="text-decoration: none;">
+                    <img src="https://johnowensservices.com/wp-content/uploads/11-1.webp" alt="Drain Cleaning">
+                    <h3>Tankless Water heaters</h3>
+                    <p>One of the most trusted tankless water heaters in the market.
+                    </p>
+                </a>
+            </div>
+
+            <div class="service-card">
+                <a href="#" style="text-decoration: none;">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Untitled-180-x-180-px-2.svg"
+                        alt="Plumbing Repairs">
+                    <h3>Heat Pump Water Heaters</h3>
+                    <p>Newly designed and ready to lower carbon footprint and your home’s utility bills.
+                    </p>
+                </a>
+            </div>
+            <div class="service-card">
+                <a href="#" style="text-decoration: none;">
+                    <img src="https://johnowensservices.com/wp-content/uploads/10-1.webp" alt="Sewer Line Repair">
+                    <h3>Boiler</h3>
+                    <p> These can be used for radiant heating or even for domestic water heating if the unit is a Combi
+                        Boiler.
+                    </p>
+                </a>
+            </div>
+            <!-- <div class="service-card">
+                <a href="#"
+                    style="text-decoration: none;">
+                    <img src="https://johnowensservices.com/wp-content/uploads/pixelcut-export.png"
+                        alt="Emergency Services">
+                    <h3>Air-To-Water Heat Pumps</h3>
+                    <p>These split systems are extremely quiet and efficient. It combines an indoor storage tank with an
+                        outdoor heat pump unit.</p>
+                </a>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- <div class="text-section">
+        <h2>What is a Heat Pump Water Heater?</h2>
+        <p>A heat pump water heater is a piece of plumbing equipment that works like a refrigerator in reverse. Instead
+            of using a compressor to pull heat from inside the refrigerator and transfer it to the surrounding room, a
+            water heater heat pump uses the compressor to take heat from the surrounding air and transfer it inside a
+            storage tank, where your water is heated and stored. It is a type of electric tank water heater that uses
+            the air in the surrounding space to move the heat instead of burning a fuel to create heat. These water
+            heaters are up to 400% more efficient, maximizing the heat produced from the electricity going in.
+        </p>
+        <h2>Will a Heat Pump Water Heater Work In My Home?</h2>
+        <p>These are great water heater units, but installation can not just be anywhere in the home. There are factors
+            other than cost when looking if a heat pump water heater is the right choice for your Santa Rosa home:
+        </p>
+        <ul>
+            <li>First of all, this is an electrical piece of equipment. It is important to check that the electrical
+                panel will have room for the water heater. If there is no room, a panel upgrade may be needed.
+            </li>
+            <li>Next, it is important to look at the size of the home and how many people there are. A heat pump water
+                heater has a slower recovery time than gas or propane units; this is due to moving heat instead of
+                burning a fuel to create it. Typically, homeowners will move up in water heater tank size when selecting
+                a heat pump water heater.
+            </li>
+            <li>It is also important to make sure there is enough surrounding space around the unit. These units are
+                moving air, the more air around the unit the better. If space is limited, there are ducting and venting
+                options to allow the water heater to be placed in tighter spots.
+            </li>
+            <li>Making sure the unit will remain in high-efficiency temperatures above freezing. Once the air intake of
+                the water heater is too cold the efficiency will drop. Santa Rosa does not have too many cold days like
+                that, but it makes installation of these units very difficult in outdoor sheds. Most units will have an
+                electric heating element that will kick in if the heat pump mode is inefficient.
+            </li>
+
+        </ul>
+        <a href="#">Learn More</a>
+    </div> -->
+    <!-- <div id="boilerandhydronic">
+    <br><br><br><br>
+    <div class="reasons-section">
+        <div class="reasons-image">
+            <img src="https://johnowensservices.com/wp-content/uploads/JO-6.png" alt="Plumber"
+                style="width: 100%; border-radius: 10px; height: 400px;">
+        </div>
+        <div class="reasons-content">
+            <h2>Boiler & Hydronic Services in Sebastopol, CA:</h2>
+            <p>• John Owens has fifty years of experience maintaining boilers.
+            </p>
+            <p>• Our company has actively participated in the construction and maintenance of boilers throughout the state of California since 1988.
+
+
+            </p>
+            
+            <p>•Some of the best boiler service technicians in the industry work with us.
+
+
+            </p>
+            <p>•Our fully stocked service vehicles carry the most common boiler parts for hydronic systems and boilers. You save time and money by doing it.
+            </p>
+            <p>• Once a year, hot water boilers require a comprehensive maintenance inspection, as per the installation instructions. We provide maintenance services for hundreds of residential boilers in Marin and Sonoma. Call us now to schedule an annual maintenance appointment.
+            </p>
+        </div>
+    </div>
+</div> -->
+
+    <div class="testimonial-section">
+        <h2>Customer Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <img src="https://johnowensservices.com/wp-content/uploads/quote.svg" alt="Quote">
+                <p>My dealings with the John Owens Company have been outstanding in all aspects; always punctual,
+                    excellent communication, and product service. I highly recommend them</p>
+                <span>Joan Porter</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://johnowensservices.com/wp-content/uploads/quote.svg" alt="Quote">
+                <p>Was so impressed with the service I got! Tim figured out quickly why my radiant heat was not working
+                    and fixed it. He explained everything to me and answered all my questions. The office communicated
+                    his arrival time with updates, so that I could keep working until he arrived.</p>
+                <span>Constance Riedinger</span>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://johnowensservices.com/wp-content/uploads/quote.svg" alt="Quote">
+                <p>From start to finish, working with John Owens is always a pleasure. Scheduling is easy and every
+                    technician we have worked with has been honest, reliable, and professional. Today, they sent Tim to
+                    help me with our dated boiler system. He was extremely knowledgeable and beyond helpful. Thank you,
+                    Tim!</p>
+                <span>A D</span>
+            </div>
+        </div>
+        <a href="https://johnowensservices.com/about/reviews/" class="more-reviews">More Reviews</a>
+    </div>
+    <!--
+    <div class="bestsystem">
+        <h2>Which Type Of Water Heater Is Best For <br> My Mill Valley, CA Home?</h2>
+        <p>Thinking of installing a new hot water heater for your San Rafael or Mill Valley, California, home? Heating
+            water can make up as much as 20% of the energy used in a Mill Valley home. Homes require energy-efficient
+            water heaters to provide hot water and keep power expenditures reasonable in light of growing utility
+            prices.
+        </p>
+
+        <h3>Gas Tank Water Heaters Natural Gas and Liquid Propane (8 -11 years lifespan)-</h3>
+        <p>Dependable Mill Valley water heaters with proven technology. These are the most prevalent types of water
+            heaters in American homes. Their operating efficiency is limited to 50% to 60%. Despite the fact that these
+            devices squander 40–50 cents for every dollar spent, tank water heaters nonetheless function during
+            earthquakes and power outages. It is anticipated that the price of natural gas will triple, while the cost
+            of liquid propane is already exorbitant.</p>
+
+        <h3>Electric Tank Water Heaters (10-15 years lifespan)-</h3>
+        <p>These efficiently transfer heat by heating water through the use of electrical resistance components. But
+            with our Bay Area electricity rates, it is costly to run a hot water heater like this.</p>
+
+        <h3>High Efficiency Electric Heat Pump Water Heaters (13-15 years lifespan)-</h3>
+        <p>This is the best and most recent Mill Valley water heating technology. These units have an efficiency of up
+            to 400%. This means that 3–4 kW of water heating may be produced from 1 kW of electricity. The future lies
+            in electrification, and there are numerous tax breaks and energy rebates available. These will also
+            typically last longer than conventional water heaters.
+        </p>
+
+        <h3>Gas and Electric Tankless Water Heaters (up to 20 years with annual service)-</h3>
+        <p>The most compact tankless water heaters that are available are also referred to as on-demand water heaters.
+            Up to 96% of gas models are efficient. An electrical tankless water heater will save space, but because they
+            need high-amperage electrical circuits, they are sadly not very popular. Most homeowners do not have easy
+            access to these circuits.</p>
+
+        <h3>Indirect Tank Water Heater (long lasting due to an indirect heat source)-</h3>
+        <p>A hydronic boiler is typically used to heat this kind of Mill Valley water heater. The water in the storage
+            tank is heated by the internal water coil of this type of water heater, which circulates extremely hot
+            water. Twenty years ago, this kind of water heating was most common. Since heat pumps and tankless water
+            heaters are more widely available, they are less common.
+        </p>
+
+        <h3>Solar Thermal Water Heaters (long lasting with higher repair costs)-</h3>
+        <p>Sun-generated hot water, for free. A solar storage tank inside the building is heated by one or more thermal
+            solar panels that are often mounted on the roof of these systems. The systems might be drain-backed,
+            glycol-filled, or water-filled. The technology is excellent. Because they require more yearly service and
+            repairs than other methods of heating water, these systems are currently not particularly popular.
+        </p>
+
+
+
+    </div>
+-->
+    <!-- <div class="reasons-section">
+        <div class="reasons-image">
+            <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-scaled.webp" alt="Plumber"
+                style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="reasons-content">
+            <h2>Annual Rinnai Dealer and Installer</h2>
+            <ul class="listall">
+                <li>If the parts and labor are covered by Rinnai, there are no trip charges or charges of any kind. <br>
+
+                    If labor charges do apply, the fee is $125 to diagnose the problem. However, there is no diagnostic fee on exchanger replacement if it is a standard truck stock exchanger. <br>
+                    
+                    We carry all of the popular water heater replacement parts and heat exchanger replacement parts on our trucks. <br>
+                    
+                </li>
+
+
+
+
+            </ul>
+            <a href="https://johnowensservices.com/contact-us/ " class="check-availability">Check Availability</a>
+        </div>
+    </div> -->
+    <div class="info-section">
+        <div class="info-container">
+            <div class="info-card">
+                <img src="https://johnowensservices.com/wp-content/uploads/coupon-1.png" alt="Fast Service">
+                <h3> <b>$200</b> - Off Install</h3>
+                <p style="font-size: smaller;">Can not be combined with other offers</p>
+
+
+            </div>
+            <div class="info-card">
+                <img src="https://johnowensservices.com/wp-content/uploads/coupon-1.png" alt="Special Offers">
+                <h3> <b>10%</b> - Senior Discount</h3>
+                <p style="font-size: smaller;">Can not be combined with other offers</p>
+
+            </div>
+            <div class="info-card">
+                <img src="https://johnowensservices.com/wp-content/uploads/coupon-1.png" alt="Water Wasting">
+                <h3> <b>10%</b> - Veterans Discount</h3>
+                <p style="font-size: smaller;">Can not be combined with other offers</p>
+
+
+            </div>
+            <div class="info-card">
+                <img src="https://johnowensservices.com/wp-content/uploads/coupon-1.png" alt="Job Estimate">
+                <h3> <b>$35</b> - Off Repair</h3>
+                <p style="font-size: smaller;">Can not be combined with other offers</p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="expert-plumbers-section" id="boilerinstallation">
+        <div class="expert-plumbers-container">
+            <div class="expert-plumbers-content">
+                <h2>Your Expert Rinnai Dealer and Installer
+                </h2>
+                <p>Rinnai is the largest gas appliance manufacturer in the world. Established in the U.S. since 1974,
+                    Rinnai has sold more than 30 million tankless water heaters worldwide. John Owens Services, Inc. is
+                    proud to be chosen as an authorized Rinnai dealer and installer. Since 1999, we’ve always believed
+                    in the quality of this brand, and our customers can rest assured that we only recommend products
+                    that you would find in our own homes.
+                </p>
+            </div>
+            <div class="video-container">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m9PpXMG336s?si=nyytdeRPmGbIKyaZ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="reasons-section" style="background-color: rgba(232, 231, 231, 0.605); margin-top: 80px;">
+        <div class="reasons-image">
+            <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-scaled.jpg" alt="Plumber"
+                style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="reasons-content">
+            <h2 class="new-section-text">Authorized Rinnai Dealer </h2>
+            
+            
+            <p class="new-section-text">
+                
+                John Owens Services is proud to be a Rinnai authorized dealer. For over 25 years, we have been absolutely amazed with the quality of their tankless units. Adding units like the Demand Duo for larger applications and a high-efficiency heat pump water heater make this one of the most appealing companies to purchase a water heater from. We can handle the install and any repairs for your unit, whether under warranty or not. Whether purchasing a Rinnai boiler, tankless, combi, heat pump, or even a demand duo, you will be sure to have a great water heating system.
+
+            </p>
+            
+        </div>
+    </div> 
+
+    <!--
+     <div id="airtowaterheatpump">
+        <br><br><br><br>
+    <div class="reasons-section">
+        <div class="reasons-image">
+            <img src="https://johnowensservices.com/wp-content/uploads/IMG_2875-scaled.jpg" alt="Plumber"
+                style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="reasons-content">
+            <h2>Air to Water Heat Pumps - the way of the future</h2>
+            <ul class="listall">
+                <li>There is a trend in California and across the US to move away from heating our houses with fossil fuels. Air-to-water heat pumps are high-efficiency heating and cooling systems that take the place of gas boilers. The efficiency of heat pumps is 400%. To put it briefly, this indicates that the appliance has a maximum output of 4 kW out of a total output of 1 kW. In California, it will not be legal to purchase new gas boilers after 2027. By 2030, gas boilers will be phased out across the country.
+
+                </li>
+                <li>With Air-to-Water Heat Pumps, you can now store heated or cooled water for your home's heating and cooling needs during off-peak electrical times. A kilowatt usually costs 46 cents in Marin County. A kilowatt costs 60 cents during peak hours (4 to 9 p.m.) and 30 cents during off-peak hours. "Load shifting" will be the term of the future for working during off-peak hours and preserving energy for usage during peak hours. Being able to heat or cool a house for 33% less than the national average would be fantastic.
+
+                </li>
+
+
+
+
+            </ul>
+
+        </div>
+    </div>
+</div> 
+-->
+    <!-- <div id="boilerhydronic">
+    <br><br><br><br>
+    <div class="new-section">
+        <h2 class="new-section-heading">Boiler and Hydronic Repairs</h2>
+        <p class="new-section-text">
+            All of the boilers used for hydronic heating will ultimately need maintenance. It can take some time to locate and obtain the necessary parts because the majority of boiler companies are located on the East Coast. Our vans are equipped with the most commonly required replacement and maintenance parts because they are designed to service hydronic boilers. Because we have a sizable inventory of boiler components from specialized manufacturers in our warehouse, we can speed repairs. Even if the parts are not in stock, our parts department can locate boiler repair parts with the quickest turnaround times.
+
+Nothing is more inconvenient, as far as we can tell, than having a less experienced boiler specialist come to your house or place of business to diagnose the problem. They come to your house multiple times. They go to the building site in quest of parts. Insufficient communication occurs. Parts are often delivered within a week or two. Sometimes the wrong parts are ordered. As the consumer, you are not currently getting hot water or heat. Consult the experts. Marin, Sonoma, and Napa are the counties where we identify and obtain boiler components the quickest. We can temporarily install portable boilers to provide heat and hot water while we wait for a part. We work very hard to ensure that the process is as painless as possible.
+
+
+
+
+        </p>
+        <div class="new-section-image-container">
+            <img src="https://johnowensservices.com/wp-content/uploads/Boiler-8-scaled.webp" alt="Service Image"
+                class="new-section-image">
+        </div> -->
+    <!-- <p class="new-section-text">
+            <b>Combi Boilers-</b>  These can act as the hot water heater and air conditioner in your house. The benefits of these water heaters include not needing a storage tank and being energy-efficient. These tankless water heaters are not only good for heating air, but they can also heat your domestic water on demand.
+            <br>
+            <b>Tankless Boilers-</b>  They do not heat potable domestic water or radiant water; instead, they function similarly to a combi boiler, but just for the radiant heat element of household water heating. Excellent in terms of space savings and energy efficiency.
+
+
+            <br>
+            <b>Individual Heating Boilers-</b>   Many boilers only provide space heating. A separate water heater in the house provides hot water for domestic use. We maintain and fix boilers that are sixty years old. These old-fashioned cast-iron boilers are very sturdy. However, they are ineffective and expensive to operate. For thirty years, we have been installing and maintaining condensing boilers. Condensing boilers are often 95% efficient and use PVC exhaust pipe.
+
+
+            <br>
+            <b> Boilers attached to Indirect Water Heaters </b>    In some larger homes, a space heating boiler provides indirect heat to massive hot water storage tanks. We are in charge of updating and maintaining these larger combo systems.
+
+
+            <br><br>
+
+            <b>Our repair services offered to homeowners in the Sebastopol area include:</b>
+        <ul>
+            <li> Gas boiler issues</li>
+            <li>Radiant floor repairs</li>
+            <li>Radiant floor manifold repairs and replacement</li>
+            <li>Radiant leak locating and repair</li>
+            <li>Boiler external components repair and replacement</li>
+            <li>Hydronic Circulating Pump repair and replacement</li>
+            <li>Thermostat problems</li>
+            <li>Zone valve and zoning problems</li>
+            <li>Hydronic Baseboard problems</li>
+            <li>European radiator problems</li>
+            <li>Indirect tank repairs and replacement
+            </li> <br><br>
+        </ul>
+        Give John Owens Services a call if you live in the Sebastopol region and require boiler repair.
+
+
+        </p>
+    </div>
+</div> -->
+    <!-- <div class="faq-section1">
+        <div class="faq-container">
+
+            <div class="faq-content">
+                <div class="faq-column">
+                    <h3>What areas do you serve?</h3>
+                    <p>Mr. Rooter Plumbing of Sonoma County serves the greater Santa Rosa area, CA, in addition to the
+                        following cities:</p>
+                    <ul>
+                        <li>Calistoga</li>
+                        <li>Bodega</li>
+                        <li>Bodega Bay</li>
+                        <li>Rohnert Park</li>
+                        <li>Occidental</li>
+                        <li>Rio Nido</li>
+                        <li>Sebastopol</li>
+                        <li>Sonoma</li>
+                        <li>Villa Grande</li>
+                        <li>Windsor</li>
+                        <li>The Sea Ranch</li>
+                    </ul>
+                    <h3>What should I do if my main drain is clogged?</h3>
+                    <p>A clogged main drain is a very serious problem that should be considered a plumbing emergency
+                        that requires immediate attention. It is necessary for a plumbing professional to identify if it
+                        is a clogged drain or if your main sewer line is blocked.</p>
+                    <p>The warning signs of a clogged drain include:</p>
+                    <ul>
+                        <li>Water from different rooms drains too slowly</li>
+                        <li>Water backs up in the shower, bathtub, or sink</li>
+                        <li>There are puddles of water on the floor near the tub, bathtub, shower, or in the laundry
+                            room</li>
+                        <li>You hear bubbling or gurgling sounds coming from one or more of your drains</li>
+                        <li>Foul smells emanate from your drains</li>
+                    </ul>
+                </div>
+                <div class="faq-column">
+                    <h3>Can toilet paper clog a sewer line?</h3>
+                    <p>Toilet paper dissolves after a few minutes in water. However, a large amount of toilet paper can
+                        clog the sewer line and cause a blockage, especially if there are existing issues. The best way
+                        to determine if toilet paper is the cause of the blockage is to call a plumbing professional.
+                        Our professionals will be able to fix it in just a few minutes.</p>
+                    <h3>What is the purpose of hydro jetting service?</h3>
+                    <p>Hydro jetting is the process of clearing clogs and debris buildup on the walls of pipes
+                        throughout the plumbing system by using high-pressure water jets through the pipes. The water
+                        flushes away buildup inside your pipes, such as grease, minerals, and tree roots. Hydro jetting
+                        also breaks up clogs and other blockages.</p>
+                    <p>The advantages of hydro jetting are:</p>
+                    <ul>
+                        <li>It is chemical-free and is environmentally friendly</li>
+                        <li>It avoids septic tank issues</li>
+                        <li>It is easy to perform</li>
+                        <li>It provides long-lasting results</li>
+                        <li>It helps avoid pipe damage by preventing future major problems</li>
+                    </ul>
+                    <p>Hydro jetting must be done correctly to avoid consequential damage, such as burst pipes and
+                        serious damage to your plumbing system. At Mr. Rooter, we understand the technicalities and
+                        techniques of the services required to perform this procedure. If you want to know more about
+                        hydro jetting and how it can help you solve your home or business plumbing issues, call us
+                        today!</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <div class="reliable-plumbing-section">
+        <div class="reliable-plumbing-image">
+            <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Reliable Plumbing"
+                style="width: 80%; height: 250px; border-radius: 0px;">
+        </div>
+        <div class="reliable-plumbing-content">
+            <h2>Reliable Radiant Heat Boilers Services</h2>
+            <p>
+                Rinnai products are extremely well engineered, have excellent warranties, and the best technical support in the industry. Rinnai water heaters come standard with a 12-year heat exchanger warranty and a 5-year parts and labor warranty. Tech support is always available and always precise in their diagnostics, and parts are never more than a day away.
+
+        </div>
+    </div>
+
+    <div class="results-section">
+        <!-- "Prev" button on the left side of the image section -->
+        <button class="nav-arrow prev" onclick="moveSlides(-1)">Prev</button>
+
+        <div class="results-container">
+            <div class="slider-wrapper">
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2918-scaled.webp"
+                        alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/071619_JohnOwensServices_-2936-scaled.webp"
+                        alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC00622-scaled.webp" alt="Result 3">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03771-scaled.webp" alt="Result 4">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03777-scaled.webp" alt="Result 5">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.webp" alt="Result 1">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/IMG_2401-1-scaled.webp" alt="Result 2">
+                </div>
+                <div class="result-card">
+                    <img src="https://johnowensservices.com/wp-content/uploads/Tanklesswaterheater3.webp"
+                        alt="Result 3">
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- "Next" button on the right side of the image section -->
+        <button class="nav-arrow next" onclick="moveSlides(1)">Next</button>
+    </div>
+
+    <div class="schedule-repair-section">
+        <div class="schedule-repair-container">
+            <div class="schedule-repair-content">
+                <h2>Ready to schedule service for Rinnai products?
+                </h2>
+                <h3>Call now!</h3>
+
+                <a href="tel:+1   (707) 452-3464" class="phone-link">Call Us: (707) 452-3464</a><br>
+
+            </div>
+            <div class="schedule-repair-image">
+                <img src="https://johnowensservices.com/wp-content/uploads/DSC03807-scaled.jpg" 
+                    alt="Plumbing Repair">
+            </div>
+        </div>
+    </div>
+    <div class="areas-serve-section">
+        <div class="areas-serve-container">
+            <div class="areas-serve-content">
+                <!-- <h2>Boilers in Sebastopol</h2>
+                <p>Our business can take care of any plumbing service, including boiler maintenance and water heater repair, in Sebastopol and the surrounding area. We handle wall heaters, radiant heating, and a ton of other kinds of heater systems! Our reputation for unparalleled excellence is upheld in everything we do, from a minor repair job for everyday issues to a large repair project requiring special solutions. Our plumbing service regularly offers our esteemed heating and plumbing services to customers in Sebastopol, CA, and the surrounding area, whether you need a replacement, install, or repair job.
+                </p> -->
+                <h3>Areas We Serve</h3>
+                <div class="unique-container">
+                    <div class="unique-column">
+                        <h3>Sonoma County</h3>
+                        <ul>
+                            <a href="https://johnowensservices.com/sonoma-county/cotati/">
+                                <li>Cotati</li>
+                            </a>
+                            <a href="https://johnowensservices.com/sonoma-county/glen-ellen/">
+                                <li>Glen Ellen</li>
+                            </a>
+                            <a href="https://johnowensservices.com/sonoma-county/napa/">
+                                <li>Napa</li>
+                            </a>
+                            <a href="https://johnowensservices.com/sonoma-county/penngrove/">
+                                <li>Penngrove</li>
+                            </a>
+                            <a href="https://johnowensservices.com/sonoma-county/petaluma/">
+                                <li>Petaluma</li>
+                            </a>
+                            <a href="https://johnowensservices.com/sonoma-county/rohnert-park/">
+                                <li>Rohnert Park</li>
+                            </a>
+                            <a href="https://johnowensservices.com/sonoma-county/santa-rosa/">
+                                <li>Santa Rosa</li>
+                            </a>
+                            <a href="https://johnowensservices.com/sonoma-county/Sebastopol/">
+                                <li>Sebastopol</li>
+                            </a>
+                            <a href="https://johnowensservices.com/sonoma-county/windsor/">
+                                <li>Windsor</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="unique-column">
+                        <h3>Marin County</h3>
+                        <ul>
+                            <a href="https://johnowensservices.com/marin-county/belvedere/">
+                                <li>Belvedere</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Bolinas/">
+                                <li>Bolinas</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Corte%20Madera/">
+                                <li>Corte Madera</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Corte%20Madera/">
+                                <li>Fairfax</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Corte%20Madera/">
+                                <li>Forest Knolls</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Corte%20Madera/">
+                                <li>Greenbrae</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Inverness/">
+                                <li>Inverness</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Kentfield/">
+                                <li>Kentfield</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Lagunitas/">
+                                <li>Lagunitas</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Larkspur/">
+                                <li>Larkspur</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Marinwood/">
+                                <li>Marinwood</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Mill%20Valley/">
+                                <li>Mill Valley</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Muir%20Beach/">
+                                <li>Muir Beach</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="unique-column">
+                        <h3>Marin County Cont.</h3>
+                        <ul>
+                            <a href="https://johnowensservices.com/marin-county/Nicasio/">
+                                <li>Nicasio</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Novato/"></a>
+                            <li>Novato</li></a>
+                            <a href="https://johnowensservices.com/marin-county/Point%20Reyes%20Station/">
+                                <li>Point Reyes Station</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Point%20Reyes%20Station/">
+                                <li>Ross</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/San%20Anselmo/">
+                                <li>San Anselmo</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/San%20Geronimo%20Valley/">
+                                <li>San Geronimo Valley</li>
+                            </a>
+                            <a href="https://johnowensservices.com/san-rafael/">
+                                <li>San Rafael</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/sausalito/">
+                                <li>Sausalito</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Stinson%20Beach/">
+                                <li>Stinson Beach</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Strawberry/">
+                                <li>Strawberry</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Tamalpais%20Homestead%20Valley/">
+                                <li>Tamalpais Homestead Valley</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Terra%20Linda/">
+                                <li>Terra Linda</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Tiburon/">
+                                <li>Tiburon</li>
+                            </a>
+                            <a href="https://johnowensservices.com/marin-county/Woodacre/">
+                                <li>Woodacre</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <!-- <div class="unique-column">
+                        <h3>Napa County</h3>
+                        <ul>
+                            <a href="https://johnowensservices.com/napa-county/saint-helena">
+                                <li>Saint Helena</li>
+                            </a>
+                            <a href="#"></a>
+                            <li>Napa </li></a>
+                            <a href="https://johnowensservices.com/napa-county/yountville">
+                                <li>Yountville</li>
+                            </a>
+                            <a href="https://johnowensservices.com/napa-county/calistoga">
+                                <li>Calistoga</li>
+                            </a>
+                        </ul>
+                    </div> -->
+                </div>
+
+
+            </div>
+            <div class="areas-serve-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122.1760012807476!2d-122.7903108246141!3d38.50665156966619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80843ebf1141732f%3A0xce17ca5d62dee972!2s3471%20Regional%20Pkwy%20Suite%20C%2C%20Santa%20Rosa%2C%20CA%2095403%2C%20USA!5e0!3m2!1sen!2sin!4v1724422199201!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </div>
+    <!-- Services We Provide Section -->
+    <div class="custom-services-section">
+        <h2>Our Plumbing Services</h2>
+        <div class="custom-services-container">
+            <div class="custom-services-column">
+                <div class="custom-service-item">
+                    <a href="https://johnowensservices.com/plumbing/sewer-drain-cleaning/">Sewer and Drain
+                        Cleaning
+                        <span>→</span></a>
+                </div>
+                <div class="custom-service-item">
+                    <a href="https://johnowensservices.com/plumbing/sewer-drain-cleaning/">Rooter Service
+                        <span>→</span></a>
+                </div>
+                <div class="custom-service-item">
+                    <a href="https://johnowensservices.com/plumbing/leak-detection/">Leak Detection
+                        <span>→</span></a>
+                </div>
+            </div>
+            <div class="custom-services-column">
+                <div class="custom-service-item">
+                    <a href="https://johnowensservices.com/plumbing/">Faucets, Sinks,
+                        Toilets <span>→</span></a>
+                </div>
+                <div class="custom-service-item">
+                    <a href="https://johnowensservices.com/water-heaters/">Water
+                        Heaters<span>→</span></a>
+                </div>
+                <div class="custom-service-item">
+                    <a href="https://johnowensservices.com/heating/boilers/">Boilers
+                        <span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq-section">
+        <div class="faq-container">
+            <h2>
+                Boiler Service FAQs
+            </h2>
+            <div class="faq-content">
+                <div class="faq-column">
+                    <h3>How long has John Owens been working with Rinnai products?
+                    </h3>
+                    <p>We have been a Rinnai dealer for 25 years. We stand behind their efficient products and always
+                        deliver professional installation, repair, and maintenance to homeowners. Everyone on our team
+                        is trained to work with this equipment so that we can provide accurate and effective service.
+                        Since we have so much experience working with these products, we can guarantee top-notch work
+                        from our department on any service you may be looking for regarding Rinnai products.
+
+
+                    </p>
+
+
+
+
+                    <h3>What makes Rinnai so efficient?
+
+                    </h3>
+                    <p>Rinnai offers equipment such as tankless water heaters and combination boilers that can
+                        significantly save on energy and utility costs. This technology can significantly improve your
+                        home’s energy usage when it comes to water and space heating and even provide you with more
+                        accurate, comfortable heating. Their tankless units never run out of hot water and can last
+                        twice as long as tank units. Their smaller size can save space in your home as well.
+
+
+
+                    </p>
+
+
+
+                </div>
+                <div class="faq-column">
+                    <h3>How long has Rinnai been in business?
+                    </h3>
+                    <p>Rinnai has been in business for 100 years! In all this time, they have been able to maintain a
+                        dedication to quality, advanced, energy-efficient products with an incredible warranty. This, in
+                        addition to their rebates and financing options, makes Rinnai products a great choice for many
+                        homeowners.
+
+
+
+
+                    </p>
+                    <h3>What is Rinnai’s warranty?
+                    </h3>
+                    <p>Customers receive labor coverage of 1 year with Rinnai tankless water heaters. However, this
+                        coverage can extend to 5 years if your product is registered within 90 days of purchasing. You
+                        can visit their <a href="https://www.rinnai.us/">website </a>for more details on product warranties.
+
+
+
+
+                    </p>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-details-section">
+
+        <div class="brand-section-services-details">
+            <h2>Trusted Since 1986</h2>
+          
+                <!-- Brand Logos Section with Links -->
+                <div class="brand-section-logos-container">
+                    
+                    
+                    <a href="https://example.com/brand11" target="_blank" rel="noopener">
+                        <img src="https://johnowensservices.com/wp-content/uploads/Rinnai_Logo_Red.webp" alt="Brand 11"
+                            class="brand-section-logo">
+                    </a>
+                    
+                </div>
+            </div>
+            
+            <p class="brand-section-serves-inside">It is a simple equation. Rinnai has excellent products that are
+                predicted to last for 20 years with regular maintenance and little repair. If Rinnai customers are
+                satisfied with Rinnai products and the services we provide, they will recommend the products and
+                services to their friends.
+                <br><br>
+                For any of your Rinnai needs and questions, contact John Owens Services in San Rafael at 707-452-3464 or
+                415-322-7542. We guarantee that after every installation, maintenance, or repair, you will be supplied
+                with an efficient and sustainable piece of equipment for your home!
+
+
+
+            </p>
+            
+        </div>
+
+
+
+        <!-- <div class="services-details-container">
+            <div class="service-detail-card">
+                <h2>Drain Cleaning</h2>
+                <p>John Owens offers services for all types of water heaters. That includes tanks, tankless, heat pumps, and even solar water heaters. Call today to ask us about the best water heater type for your home. </p>
+                <a href="https://johnowensservices.com/plumbing/sewer-drain-cleaning/" class="service-link">► See
+                    Service</a>
+            </div>
+            <div class="service-detail-card">
+                <h2>Plumbing Repairs</h2>
+                <p>  With any problem or repair involving residential plumbing, our plumbers are here to help. Leaky water heaters, sinks, showers, and toilets are a few examples of this. Give a John Owens plumber a call right now if you're experiencing plumbing issues in your house. 
+                </p>
+                <a href="https://johnowensservices.com/plumbing/" class="service-link">► See Service</a>
+            </div>
+            <p class="serves-inside">
+                You can reduce your electricity costs by installing a tankless heater, which offers endless, on-demand warm water, efficient hot water flow, and improved energy savings. Instantaneous, potent water quality makes daily living easier. Our skilled water heater service offers the best, most accurate services accessible.
+                
+
+            </p> -->
+    </div>
+    </div>
+    <!-- <div class="partner-section">
+        <div class="partner-container">
+            <div class="partner-logos">
+
+            </div>
+            <h2>Mr. Rooter is part of the Neighborly family of home service providers.</h2>
+            <p>Searching through dozens of home service providers is a thing of the past. Rely on Neighborly’s national
+                network of trusted, <br> local home service professionals for all your home service needs.</p>
+            <div class="partner-buttons">
+                <a href="#" class="partner-button">Discover Neighborly</a>
+                <div class="app-buttons">
+                    <a href="#" class="app-button">AppStore</a>
+                    <a href="#" class="app-button">Google Play</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.result-card');
+        const totalSlides = slides.length;
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        let slideInterval;
+
+        function moveSlides(n) {
+            slideIndex += n;
+            if (slideIndex < 0) {
+                slideIndex = totalSlides - 3; // Ensuring there are always 3 images visible
+            } else if (slideIndex > totalSlides - 3) {
+                slideIndex = 0;
+            }
+            updateSlides();
+        }
+
+        function updateSlides() {
+            const offset = -slideIndex * (100 / 3 + (10 / 1200 * 100)); // Adjust for showing 3 images and gap
+            sliderWrapper.style.transform = `translateX(${offset}%)`;
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(() => {
+                moveSlides(1);
+            }, 3000); // Change slide every 3 seconds
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideInterval);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateSlides();
+            startSlideShow();
+
+            // Pause the slideshow on hover
+            document.querySelector('.results-container').addEventListener('mouseover', stopSlideShow);
+            document.querySelector('.results-container').addEventListener('mouseout', startSlideShow);
+        });
+    </script>
+
+</body>
+
 </html>
